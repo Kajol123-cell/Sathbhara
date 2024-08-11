@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_GIS</title>
+
+    <!--  leaflet css  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Geocoding for Search-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+     <!-- betterWMS  -->
+
+</head>
+<body>
+  <div>
+
+    <div id="map">
+    <div class="leaflet-control coordinate"></div>
+    <br>
+
+    </div>
+
+  <button id="mapFullScreenBtn" onclick="FullScreenView()">View Map FullScreen</button>
+  <select id="featureSelect">
+    <option value="">Select Gut Number</option>
+    <!-- Options will be added here dynamically -->
+</select>
+
+  <!-- Leaflet Js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+ <!-- jquery link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Leaflet Geoserver request Link -->
+ <script src="/libs/L.Geoserver.js"></script>
+ <script src="./libs/L.TileLayer.BetterWMS.js"></script>
+ <script src="/libs/catiline.js"></script>
+ <script src="/libs/leaflet.shpfile.js"></script>
+<script src="/libs/Gondur_GutNo_SurveyNo2 copy.js"></script>
+<!--Geocoding-->
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<!-- 
+<script src="/libs/labelgun.min.js"></script>
+<script src="/libs/labels.js"></script>
+<script src="/libs/leaflet-control-geocoder.Geocoder.js"></script>
+<script src="/libs/leaflet-measure.js"></script>
+<script src="/libs/leaflet-search.js"></script>
+<script src="/libs/Village_Boundary_1.js"></script> -->
+
+
+<script src="map.js"></script>
+</body>
+</html>

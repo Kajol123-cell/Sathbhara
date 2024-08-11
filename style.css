@@ -1,0 +1,61 @@
+body{
+  margin:auto;
+  padding: auto;
+
+}
+#map{
+  width: 70%;
+  height:70vh;
+  margin:auto;
+  padding: auto;
+  margin-top:7%;
+
+  .coordinate{
+    position:absolute;
+    bottom: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: medium;
+    background-color: black;
+  }
+}
+
+#mapFullScreenBtn{
+  background-color: brown;
+  font-weight: bold;
+  color: aliceblue;
+  height: 40px;
+  margin-left: 15%;
+  padding: 0%;
+}
+
+#coordinate{
+ 
+  height: 40px;
+  width:auto;
+  margin-left: 15%;
+}
+
+.leaflet-popup-content-wrapper {
+  max-width: 250px; /* Adjust this value as needed */
+  overflow-wrap: break-word;
+}
+
+.leaflet-popup-content {
+  word-wrap: break-word;
+}
+
+.popup-content {
+  /* Optional: Add some padding and other styling if needed */
+  padding: 10px;
+  line-height: 1.4; /* Adjust line height for readability */
+}
+
+#featureSelect{
+  background-color: brown;
+  font-weight: bold;
+  color: aliceblue;
+  height: 40px;
+  padding: 0%;
+
+}
